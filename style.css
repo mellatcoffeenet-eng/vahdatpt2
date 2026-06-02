@@ -421,10 +421,13 @@ img {
 }
 
 .disease-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .disease-card {
@@ -437,12 +440,8 @@ img {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     cursor: pointer;
-}
-
-.disease-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    background: #f0f8ff;
+    width: 110px;
+    flex: 0 0 auto;
 }
 
 .disease-card img {
