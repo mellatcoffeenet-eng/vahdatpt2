@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات - فیزیوتراپی وحدت</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .page-content h1 {
+            color: #007aff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 3px solid #007aff;
+            padding-bottom: 15px;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .article-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        .article-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-card .article-body {
+            padding: 15px;
+        }
+        .article-card h3 {
+            color: #007aff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .article-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body style="background: #d5a6bd;">
+    <div class="main-container">
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/Seting/Faveicon/لوگو-وحدت(2).png" alt="لوگو" class="logo-img">
+            </a>
+        </header>
+        
+        <a href="../index.html" class="back-btn">← بازگشت به صفحه اصلی</a>
+        
+        <div class="page-content">
+            <h1>مقالات فیزیوتراپی</h1>
+            
+            <div class="articles-grid">
+                <div class="article-card">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/article.jpg" alt="فیزیوتراپی">
+                    <div class="article-body">
+                        <h3>فیزیوتراپی چیست؟</h3>
+                        <p>فیزیوتراپی روشی درمانی برای بهبود حرکت و عملکرد بدن است که با استفاده از تکنیک‌های مختلف به بیماران کمک می‌کند.</p>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/پیوند-های-سایت/اسلایدر/بیوفیدبک.jpg" alt="بیوفیدبک">
+                    <div class="article-body">
+                        <h3>بیوفیدبک چیست؟</h3>
+                        <p>بیوفیدبک روشی درمانی است که به بیمار کمک می‌کند تا عملکردهای غیرارادی بدن خود را کنترل کند.</p>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/پیوند-های-سایت/اسلایدر/شاک-ویو.jpg" alt="شاک ویو">
+                    <div class="article-body">
+                        <h3>شاک ویو تراپی</h3>
+                        <p>شاک ویو تراپی یک روش درمانی غیرتهاجمی برای درمان دردهای مزمن عضلانی و اسکلتی است.</p>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/پیوند-های-سایت/اسلایدر/لیزر-پرتوان.jpg" alt="لیزر">
+                    <div class="article-body">
+                        <h3>لیزر پرتوان</h3>
+                        <p>لیزر پرتوان یکی از پیشرفته‌ترین روش‌های درمانی در فیزیوتراپی برای کاهش درد و التهاب است.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-copyright">
+                تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
