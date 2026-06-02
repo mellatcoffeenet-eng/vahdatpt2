@@ -29,7 +29,6 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: false,
-    direction: 'horizontal',
     pagination: {
         el: '.testimonials-pagination',
         clickable: true,
@@ -40,12 +39,8 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
     },
     speed: 800,
     effect: 'slide',
-    autoHeight: false,
-    rtl: true,
-    allowTouchMove: true,
-    watchOverflow: true,
-    observer: true,
-    observeParents: true,
+    autoHeight: true,
+    watchOverflow: false,
 });
 
 // ==============================
