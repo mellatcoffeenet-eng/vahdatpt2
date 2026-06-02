@@ -459,7 +459,7 @@ img {
 }
 
 /* ==============================
-   Testimonials Section (FINAL FIX)
+   Testimonials Section (FINAL - Fixed Label)
    ============================== */
 .testimonials-section {
     padding: 30px 20px;
@@ -506,6 +506,25 @@ img {
 .testimonials-left {
     flex: 1;
     min-width: 0;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* لیبل ثابت امتیازات */
+.testimonial-fixed-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    font-size: 15px;
+    color: #007aff;
+    font-weight: bold;
+    background: #f0f7ff;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
 .testimonials-slider {
@@ -525,9 +544,8 @@ img {
 
 .testimonial-card {
     background: #fff;
-    padding: 30px;
+    padding: 50px 30px 30px 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -536,17 +554,6 @@ img {
     border-right: 4px solid #007aff;
     min-height: 220px;
     width: 100%;
-}
-
-.testimonial-label {
-    display: block;
-    font-size: 15px;
-    color: #007aff;
-    margin-bottom: 10px;
-    font-weight: bold;
-    background: #f0f7ff;
-    padding: 5px 15px;
-    border-radius: 20px;
 }
 
 .testimonial-quote {
@@ -609,14 +616,20 @@ img {
     
     .testimonial-card {
         min-height: 180px;
-        padding: 20px;
+        padding: 45px 20px 20px 20px;
     }
     
     .testimonial-quote {
         font-size: 35px;
     }
+    
+    .testimonial-fixed-label {
+        top: 10px;
+        right: 10px;
+        font-size: 13px;
+        padding: 4px 12px;
+    }
 }
-
 /* ==============================
    Footer
    ============================== */
