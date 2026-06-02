@@ -459,7 +459,7 @@ img {
 }
 
 /* ==============================
-   Testimonials Section (FINAL - Fixed Label)
+   Testimonials Section (FINAL v2)
    ============================== */
 .testimonials-section {
     padding: 30px 20px;
@@ -506,25 +506,6 @@ img {
 .testimonials-left {
     flex: 1;
     min-width: 0;
-    position: relative;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    overflow: hidden;
-}
-
-/* لیبل ثابت امتیازات */
-.testimonial-fixed-label {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    font-size: 15px;
-    color: #007aff;
-    font-weight: bold;
-    background: #f0f7ff;
-    padding: 5px 15px;
-    border-radius: 20px;
 }
 
 .testimonials-slider {
@@ -544,8 +525,9 @@ img {
 
 .testimonial-card {
     background: #fff;
-    padding: 50px 30px 30px 30px;
+    padding: 25px 30px 30px 30px;
     border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -554,21 +536,26 @@ img {
     border-right: 4px solid #007aff;
     min-height: 220px;
     width: 100%;
+    position: relative;
 }
 
-.testimonial-quote {
-    display: block;
-    font-size: 50px;
+.testimonial-fixed-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 15px;
     color: #007aff;
-    line-height: 1;
-    margin-bottom: 15px;
-    font-family: Georgia, serif;
+    font-weight: bold;
+    background: #f0f7ff;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
 .testimonial-card p {
     font-size: 15px;
     color: #555;
     line-height: 1.9;
+    margin-top: 25px;
 }
 
 .testimonials-pagination {
@@ -616,11 +603,7 @@ img {
     
     .testimonial-card {
         min-height: 180px;
-        padding: 45px 20px 20px 20px;
-    }
-    
-    .testimonial-quote {
-        font-size: 35px;
+        padding: 25px 20px 20px 20px;
     }
     
     .testimonial-fixed-label {
@@ -628,6 +611,10 @@ img {
         right: 10px;
         font-size: 13px;
         padding: 4px 12px;
+    }
+    
+    .testimonial-card p {
+        margin-top: 20px;
     }
 }
 /* ==============================
