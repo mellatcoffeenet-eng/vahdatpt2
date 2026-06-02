@@ -40,11 +40,12 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
     },
     speed: 800,
     effect: 'slide',
-    autoHeight: true,
+    autoHeight: false,
     rtl: true,
     allowTouchMove: true,
-    resistance: true,
-    resistanceRatio: 0,
+    watchOverflow: true,
+    observer: true,
+    observeParents: true,
 });
 
 // ==============================
