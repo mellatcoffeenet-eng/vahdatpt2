@@ -34,7 +34,7 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
         clickable: true,
     },
     autoplay: {
-        delay: 1000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     speed: 800,
