@@ -41,9 +41,7 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
     speed: 800,
     effect: 'slide',
     autoHeight: true,
-    // این دو خط مهمه برای RTL
     rtl: true,
-    // جلوگیری از چرخش عمودی
     allowTouchMove: true,
     resistance: true,
     resistanceRatio: 0,
@@ -58,15 +56,19 @@ const hamburgerOverlay = document.querySelector('.hamburger-overlay');
 const hamburgerClose = document.querySelector('.hamburger-close');
 
 function openMenu() {
-    hamburgerMenu.classList.add('active');
-    hamburgerOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    if (hamburgerMenu && hamburgerOverlay) {
+        hamburgerMenu.classList.add('active');
+        hamburgerOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 }
 
 function closeMenu() {
-    hamburgerMenu.classList.remove('active');
-    hamburgerOverlay.classList.remove('active');
-    document.body.style.overflow = '';
+    if (hamburgerMenu && hamburgerOverlay) {
+        hamburgerMenu.classList.remove('active');
+        hamburgerOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 }
 
 if (hamburgerBtn) {
