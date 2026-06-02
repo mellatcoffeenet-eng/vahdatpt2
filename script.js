@@ -17,17 +17,19 @@ const mainSlider = new Swiper('.main-slider', {
         disableOnInteraction: false,
     },
     effect: 'slide',
+    direction: 'horizontal',
     speed: 600,
 });
 
 // ==============================
-// Testimonials Slider (FIXED - Single Slide at a Time)
+// Testimonials Slider - افقی و تک اسلاید
 // ==============================
 const testimonialsSlider = new Swiper('.testimonials-slider', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 30,
-    centeredSlides: true,
+    spaceBetween: 0,
+    centeredSlides: false,
+    direction: 'horizontal',
     pagination: {
         el: '.testimonials-pagination',
         clickable: true,
@@ -38,6 +40,13 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
     },
     speed: 800,
     effect: 'slide',
+    autoHeight: true,
+    // این دو خط مهمه برای RTL
+    rtl: true,
+    // جلوگیری از چرخش عمودی
+    allowTouchMove: true,
+    resistance: true,
+    resistanceRatio: 0,
 });
 
 // ==============================
