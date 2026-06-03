@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - شاک ویو">
+    <title>شاک ویو - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .article-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .article-title {
+            font-size: 28px;
+            color: #007aff;
+            font-weight: bold;
+        }
+        .article-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+        .stat-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+        .article-body {
+            line-height: 2.3;
+            color: #333;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .article-body .section-heading {
+            color: #2980b9;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin: 30px 0 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2980b9;
+        }
+        .article-body .sub-heading {
+            color: #2980b9;
+            font-size: 17px;
+            font-weight: bold;
+            display: block;
+            margin: 18px 0 10px;
+        }
+        .article-body ul {
+            list-style: none;
+            padding: 0;
+        }
+        .article-body ul li {
+            margin-bottom: 10px;
+            padding-right: 20px;
+            position: relative;
+        }
+        .article-body ul li::before {
+            content: '•';
+            color: #ff0000;
+            font-size: 22px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+        .article-body p {
+            margin-bottom: 12px;
+        }
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 25px;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .share-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+            transform: translateX(-5px);
+        }
+        @media (max-width: 768px) {
+            .article-header { flex-direction: column; text-align: center; }
+            .article-title { font-size: 22px; }
+            .article-body { font-size: 15px; line-height: 2.1; }
+            .article-body .section-heading { font-size: 18px; }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن مستقیم: 42636846 (031) تلفن مرکز: (داخلی 7) 42626266 - 42621162
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <a href="article-laser-magnet-acupuncture-shockwave.html" class="back-btn">← بازگشت به مقالات</a>
+
+
+
+        <div class="page-content">
+            
+            <div class="article-header">
+                <h1 class="article-title">🌊 شاک ویو</h1>
+                <div class="article-stats">
+                    <button class="stat-btn" onclick="handleLike()">👍 (<span id="like-count">0</span>)</button>
+                    <button class="stat-btn" onclick="handleDislike()">👎 (<span id="dislike-count">0</span>)</button>
+                </div>
+            </div>
+
+            <div class="article-body">
+                
+                <span class="section-heading">شاک ویو تراپی چیست؟</span>
+                <p>شاک ویوتراپی (Extracorporal Shock Wave Therapy - ESWT) روش درمانی جدیدی است که در آن با استفاده از امواج صوتی پر قدرت، درد ناشی از بعضی بیماری های سیستم حرکتی بدن انسان را کاهش می دهند. یک شوک ویو یا موج شوکی نوعی موج قوی ولی بسیار کوتاه مدت است که از صوت سریعتر حرکت می کند.</p>
+                <p>شاک ویوتراپی یک فن آوری موثر برای درمان ناهنجاری های اسکلتی عضلانی و مخصوصاً درد مزمن پاشنه پا (فاشیای کف پا)، التهاب اپی کندیل داخلی و خارجی آرنج (تنیس البو و گلف البو)، التهاب تاندون های مفصل شانه یا کلسیفیکاسیون شانه و شکستگی جوش نخورده محسوب می شود.</p>
+                <p>این روش غیر تهاجمی به هزاران بیماری که هر روز از دردهای ناشی از صدمات بافت و التهاب های مزمن رنج می کشند کمک می کند تا فعالیت های طبیعی و روزمره خود مانند راه رفتن، ورزش کردن، سرکار رفتن یا بلند کردن اشیاء را بدون تحمل درد انجام دهند.</p>
+                <p>امواج شاک ویو در واقع امواجی ما فوق صوت هستند که دارای انرژی بالایی می باشند و از طریق افزایش خون رسانی به بافت صدمه دیده و تاثیرات میکروترومایی موجب تسریع در روند درمان و بهبودی بافت می شوند. تکنولوژی این سیستم بسیار شبیه آن چیزی است که در دستگاه های سنگ شکن کلیه استفاده می شود.</p>
+
+                <span class="section-heading">موارد کاربرد شاک ویو</span>
+                <p>مورد استفاده عمده این روش درمانی در تاندونیت ها است. در تاندونیت ها، تاندون در محل اتصال به استخوان دچار مشکل شده و این وضعیت موجب بروز درد در بیمار می شود. مهمترین تاندونیت هایی که در درمان آنها از شوک ویو استفاده می شود عبارتند از:</p>
+                <ul>
+                    <li>فاشیای پلانتار در خار پاشنه</li>
+                    <li>تاندونیت آشیل</li>
+                    <li>تاندونیت کلسیفیک در شانه</li>
+                    <li>تاندونیت کشکک</li>
+                    <li>تنیس البو (آرنج تنیس بازان)</li>
+                    <li>گلف البو (آرنج گلف بازان)</li>
+                </ul>
+                <p><strong>از روش شوک ویو تراپی در درمان مشکلات زیر هم استفاده می شود:</strong></p>
+                <ul>
+                    <li>شکستگی های استرسی</li>
+                    <li>دیر جوش خوردن شکستگی</li>
+                </ul>
+
+                <span class="section-heading">مکانیسم اثر شاک ویو</span>
+                <p>به نظر می رسد مکانیسم اثر شوک ویوتراپی ایجاد پارگی های بسیار ریز میکروسکوپی در بافت مربوطه بر اثر ضربه شدید موج شوکی است. این پارگی های ظریف موجب آزاد شدن موادی از بافت می شود و این مواد به نوبه خود موجب افزایش مویرگهای بافت و انتقال سلول های ترمیم کننده از طرف بدن به محل آسیب دیده می گردد و بدین وسیله روند ترمیم و بهبودی در بافت مربوطه فعال می شود.</p>
+
+                <span class="section-heading">نتایج درمانی</span>
+                <p>طبق گزارشهای کلینیکی موجود حدود 77% تا 80% بیماران با این روش درمان موفقی داشته اند. هر جلسه درمان ادامه جلسه قبلی بوده و نتایج بعد از 2 تا 3 جلسه نمایان می شود، همچنین بیمار ممکن است بهبودی و کاهش درد را در جلسه ابتدایی احساس نماید.</p>
+                <p>بنا به میزان درد ناحیه در بدن بیمار، هنگام اعمال شاک ویو، ناراحتی هایی ظاهر می شود که بعلت زمان کم درمان (در حدود 5 دقیقه) اغلب بیماران این ناراحتی را به راحتی تحمل می نمایند. همچنین کنترل و تنظیم شدت فشار اعمالی به بدن می تواند کاهش درد را به همراه داشته باشد.</p>
+                <p>اغلب بیماران بعد از هر جلسه درمان فوراً کاهش درد را تجربه می کنند، هر چند 2 تا 4 ساعت بعد از درمان ممکن است دردهایی را در منطقه درمان شده احساس نمایند. طبق گزارشات کلینیکی، این درد قابل تحمل بوده و ممکن است از چند ساعت تا چند روز به طول بیانجامد.</p>
+
+                <span class="section-heading">توصیه‌های پس از درمان</span>
+                <p>توصیه می شود که بیماران تا 48 ساعت از فعالیت فیزیکی، بخصوص در نواحی تحت درمان خودداری کنند. مدت زمان هر جلسه درمانی تقریباً 5 تا 10 دقیقه می باشد و اغلب بیماریها نیاز به 3 تا 5 جلسه درمان دارند. در حالت کلی بر اساس تحمل بیمار و پاسخگویی بافت تحت درمان تعداد جلسات درمانی بین 3 تا 10 جلسه می باشد. بعضی بیماران بعد از شروع درمان کاهش محسوسی در شدت درد ناشی از بیماری را ذکر می کنند ولی معمولاً برای بدست آوردن حداکثر تاثیر درمانی نیاز به گذشت 6-8 هفته وجود دارد.</p>
+
+            </div>
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a>
+                    <a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a>
+                    <a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
