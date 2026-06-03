@@ -311,7 +311,8 @@ img {
    ============================== */
 .main-slider {
     width: 100%;
-    margin-bottom: 30px;
+    max-width: 800px;      /* عرض کمتر */
+    margin: 0 auto 30px;   /* وسط‌چین */
     position: relative;
 }
 
@@ -328,6 +329,7 @@ img {
 .main-slider .swiper-slide img {
     width: 100%;
     height: auto;
+    max-height: 280px;     /* ارتفاع کمتر */
     display: block;
     object-fit: contain;
 }
