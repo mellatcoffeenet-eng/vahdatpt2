@@ -1,9 +1,9 @@
 // ==============================
-// ==============================
 // Main Slider
 // ==============================
 const mainSlider = new Swiper('.main-slider', {
     loop: true,
+    autoHeight: true,
     pagination: {
         el: '.main-pagination',
         clickable: true,
