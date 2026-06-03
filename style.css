@@ -315,11 +315,22 @@ img {
     position: relative;
 }
 
+.main-slider .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-slider .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .main-slider .swiper-slide img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: block;
+    height: 360px;
+    object-fit: contain;
+    background: #000;
 }
 
 .main-pagination {
@@ -344,6 +355,13 @@ img {
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-size: 18px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-slider .swiper-slide img {
+        height: 250px;
+    }
 }
 
 /* ==============================
