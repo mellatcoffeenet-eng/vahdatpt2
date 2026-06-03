@@ -1,1 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - آشنایی با فیزیوتراپی">
+    <title>آشنایی با فیزیوتراپی - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* ==============================
+           Article Page Styles
+           ============================== */
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
 
+        .article-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .article-title {
+            font-size: 28px;
+            color: #007aff;
+            font-weight: bold;
+        }
+
+        .article-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+
+        .stat-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Sub-sections */
+        .sub-sections {
+            text-align: center;
+        }
+
+        .sub-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .sub-links a {
+            color: #007aff;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .sub-links a:hover {
+            background: #f0f7ff;
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .sub-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sub-card {
+            display: block;
+            width: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 1px solid #e8e8e8;
+        }
+
+        .sub-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: #007aff;
+        }
+
+        .sub-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 3px solid #007aff;
+        }
+
+        /* Share Section */
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 30px;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .share-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+            transform: translateX(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .article-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .article-title {
+                font-size: 22px;
+            }
+
+            .sub-links {
+                gap: 15px;
+            }
+
+            .sub-links a {
+                font-size: 15px;
+            }
+
+            .sub-card {
+                width: 160px;
+            }
+
+            .sub-card img {
+                height: 110px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sub-links {
+                gap: 10px;
+            }
+
+            .sub-links a {
+                font-size: 13px;
+                padding: 6px 10px;
+            }
+
+            .sub-cards {
+                gap: 10px;
+            }
+
+            .sub-card {
+                width: 140px;
+            }
+
+            .sub-card img {
+                height: 95px;
+            }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن مستقیم: 42636846 (031) تلفن مرکز: (داخلی 7) 42626266 - 42621162
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <!-- Back Button -->
+        <a href="articles.html" class="back-btn">← بازگشت به مقالات</a>
+
+
+        <!-- Main Content -->
+        <div class="page-content">
+            
+            <!-- Header -->
+            <div class="article-header">
+                <h1 class="article-title">📖 آشنایی با فیزیوتراپی</h1>
+            </div>
+
+            <!-- Sub-sections -->
+            <div class="sub-sections">
+                
+                <!-- Links -->
+                <div class="sub-links">
+                    <a href="article-physiotherapy-field.html">رشته فیزیوتراپی</a>
+                    <a href="article-exercise-therapy.html">تمرین درمانی</a>
+                    <a href="article-electrotherapy.html">الکتروتراپی</a>
+                </div>
+
+                <!-- Cards -->
+                <div class="sub-cards">
+                    <a href="article-physiotherapy-field.html" class="sub-card">
+                        <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/ph01.jpg?raw=true" alt="رشته فیزیوتراپی">
+                    </a>
+                    <a href="article-exercise-therapy.html" class="sub-card">
+                        <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/ph02.jpg?raw=true" alt="تمرین درمانی">
+                    </a>
+                    <a href="article-electrotherapy.html" class="sub-card">
+                        <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/ph03.jpg?raw=true" alt="الکتروتراپی">
+                    </a>
+                </div>
+
+            </div>
+
+ 
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a>
+                    <a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a>
+                    <a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
