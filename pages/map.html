@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - نقشه و آدرس">
+    <title>نقشه - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* ==============================
+           Map Page Styles
+           ============================== */
+        .page-content {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
 
+        .map-header {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .map-title {
+            font-size: 28px;
+            color: #007aff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: block;
+        }
+
+        .map-address-box {
+            background: #f0f7ff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border-right: 4px solid #007aff;
+        }
+
+        .map-address-box h3 {
+            color: #007aff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .map-address-box p {
+            font-size: 16px;
+            color: #444;
+            line-height: 2;
+        }
+
+        /* Share Section */
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 20px;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: all 0.3s;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .share-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+            transform: translateX(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .map-container iframe {
+                height: 350px;
+            }
+
+            .map-title {
+                font-size: 22px;
+            }
+
+            .map-address-box p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .map-container iframe {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن مستقیم: 42636846 (031) تلفن مرکز: (داخلی 7) 42626266 - 42621162
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <!-- Back Button -->
+        <a href="about.html" class="back-btn">← بازگشت به درباره ما</a>
+
+
+
+        <!-- Main Content -->
+        <div class="page-content">
+            
+            <!-- Header -->
+            <div class="map-header">
+                <h1 class="map-title">📍 نقشه و آدرس فیزیوتراپی وحدت</h1>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.9482819807695!2d51.36549156882802!3d32.6342007063613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbdd54000000001%3A0xab105c9523bd1040!2z2YHbjNiy24zZiNiq2LHYp9m-24wg2YjYrdiv2Ko!5e0!3m2!1sen!2s!4v1537691284821" 
+                    width="100%" 
+                    height="500" 
+                    style="border:0" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="موقعیت فیزیوتراپی وحدت روی نقشه">
+                </iframe>
+            </div>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a>
+                    <a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a>
+                    <a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Share function
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'نقشه فیزیوتراپی وحدت نجف آباد',
+                    text: 'آدرس: نجف آباد، خیابان امام شرقی، مابین چهارراه شهرداری و بانک ملی مرکزی',
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('لینک صفحه کپی شد!');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
