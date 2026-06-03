@@ -497,15 +497,6 @@ img {
     border-radius: 15px;
 }
 
-/* عنوان بیرون کادر */
-.testimonials-main-title {
-    text-align: center;
-    font-size: 24px;
-    color: #007aff;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
 .testimonials-wrapper {
     display: flex;
     align-items: stretch;
@@ -514,12 +505,29 @@ img {
     margin: 0 auto;
 }
 
-/* ستون سمت راست - کادر آبی با عکس */
-.testimonials-right {
+/* ستون سمت راست - شامل عنوان و کادر آبی */
+.testimonials-right-col {
     flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* عنوان بالای کادر آبی - راست‌چین */
+.testimonials-right-title {
+    font-size: 20px;
+    color: #007aff;
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
+}
+
+/* کادر آبی با عکس */
+.testimonials-right {
     background: linear-gradient(135deg, #007aff, #0056b3);
     border-radius: 15px;
     overflow: hidden;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,7 +537,8 @@ img {
 .testimonials-right img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 20px;
     display: block;
 }
 
@@ -696,13 +705,21 @@ img {
         flex-direction: column;
     }
     
-    .testimonials-right {
-        flex: 0 0 200px;
-        min-height: 180px;
+    .testimonials-right-col {
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
     }
     
-    .testimonials-main-title {
-        font-size: 20px;
+    .testimonials-right-title {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .testimonials-right {
+        min-height: 150px;
+        flex: 1;
     }
     
     .testimonial-card {
@@ -718,18 +735,5 @@ img {
     
     .testimonial-card p {
         margin-top: 20px;
-    }
-    
-    .disease-card-inner {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .disease-name {
-        font-size: 11px;
-    }
-    
-    .disease-card {
-        width: 85px;
     }
 }
