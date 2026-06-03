@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - ساعات کاری">
+    <title>ساعات کاری - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* ==============================
+           Working Hours Page Styles
+           ============================== */
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .hours-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            text-align: center;
+        }
+
+        .hours-title {
+            font-size: 28px;
+            color: #007aff;
+            font-weight: bold;
+        }
+
+        /* Schedule Table */
+        .schedule-table {
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .schedule-table thead th {
+            background: #dddddd;
+            color: #000;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+
+        .schedule-table tbody td {
+            padding: 14px;
+            text-align: center;
+            font-size: 15px;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-weight: bold;
+            border-bottom: 1px solid #e8e8e8;
+            transition: background 0.3s;
+        }
+
+        .schedule-table tbody tr:hover td {
+            background: #f9f9f9;
+        }
+
+        .day-cell {
+            background: #ccffff;
+            color: #006600;
+        }
+
+        .morning-cell {
+            color: #cc6600;
+        }
+
+        .evening-cell {
+            color: #3300cc;
+        }
+
+        .friday-row .day-cell {
+            color: #ff0000;
+        }
+
+        .friday-closed {
+            background: #ff0000;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Online Booking Link */
+        .booking-link-box {
+            text-align: center;
+            background: #f0f7ff;
+            border-radius: 12px;
+            padding: 20px;
+            border-right: 4px solid #007aff;
+            margin-top: 20px;
+        }
+
+        .booking-link-box p {
+            font-size: 16px;
+            color: #333;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-weight: bold;
+            line-height: 2;
+        }
+
+        .booking-link-box a {
+            color: #007aff;
+            text-decoration: none;
+            background: #fff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s;
+            border: 2px solid #007aff;
+            font-size: 16px;
+        }
+
+        .booking-link-box a:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Share Section */
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 25px;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .share-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+            transform: translateX(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hours-title {
+                font-size: 22px;
+            }
+
+            .schedule-table thead th,
+            .schedule-table tbody td {
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+
+            .booking-link-box p {
+                font-size: 14px;
+            }
+
+            .booking-link-box a {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .schedule-table {
+                font-size: 12px;
+            }
+
+            .schedule-table thead th,
+            .schedule-table tbody td {
+                padding: 8px 5px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن مستقیم: 42636846 (031) تلفن مرکز: (داخلی 7) 42626266 - 42621162
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <!-- Back Button -->
+        <a href="about.html" class="back-btn">← بازگشت به درباره ما</a>
+
+
+        <!-- Main Content -->
+        <div class="page-content">
+            
+            <!-- Header -->
+            <div class="hours-header">
+                <h1 class="hours-title">🕐 ساعات کاری فیزیوتراپی وحدت</h1>
+            </div>
+
+            <!-- Schedule Table -->
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>ایام هفته</th>
+                        <th>ساعات کاری صبح</th>
+                        <th>ساعات کاری عصر</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day-cell">شنبه</td>
+                        <td class="morning-cell">۸ الی ۱۲</td>
+                        <td class="evening-cell">۱۵ الی ۲۰</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">یکشنبه</td>
+                        <td class="morning-cell">۸ الی ۱۲</td>
+                        <td class="evening-cell">۱۵ الی ۲۰</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">دوشنبه</td>
+                        <td class="morning-cell">۸ الی ۱۲</td>
+                        <td class="evening-cell">۱۵ الی ۲۰</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">سه شنبه</td>
+                        <td class="morning-cell">۸ الی ۱۲</td>
+                        <td class="evening-cell">۱۵ الی ۲۰</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">چهارشنبه</td>
+                        <td class="morning-cell">۸ الی ۱۲</td>
+                        <td class="evening-cell">۱۵ الی ۲۰</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">پنجشنبه</td>
+                        <td class="morning-cell">۸ الی ۱۲</td>
+                        <td class="evening-cell">۱۵ الی ۲۰</td>
+                    </tr>
+                    <tr class="friday-row">
+                        <td class="day-cell">جمعه</td>
+                        <td colspan="2" class="friday-closed">تعطیل</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a>
+                    <a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a>
+                    <a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Share function
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'ساعات کاری فیزیوتراپی وحدت نجف آباد',
+                    text: 'شنبه تا پنجشنبه: صبح ۸ تا ۱۲ - عصر ۱۵ تا ۲۰ | جمعه: تعطیل',
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('لینک صفحه کپی شد!');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
