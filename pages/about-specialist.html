@@ -1,1 +1,499 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - درباره متخصص">
+    <title>درباره متخصص - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* ==============================
+           About Specialist Page
+           ============================== */
+        .page-content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
 
+        .specialist-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .specialist-title {
+            font-size: 28px;
+            color: #007aff;
+            font-weight: bold;
+        }
+
+        .specialist-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+
+        .stat-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        .stat-btn.liked {
+            background: #007aff;
+            color: #fff;
+        }
+
+        .stat-btn.disliked {
+            background: #ff3b30;
+            color: #fff;
+        }
+
+        /* Profile Image */
+        .profile-image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image-container img {
+            width: 85%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Content Sections */
+        .specialist-content {
+            line-height: 2;
+            color: #333;
+        }
+
+        .specialist-content h1 {
+            color: #27ae60;
+            font-size: 22px;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 10px;
+        }
+
+        .specialist-content h2 {
+            color: #27ae60;
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+
+        .specialist-content ul {
+            list-style: disc;
+            padding-right: 25px;
+            margin-bottom: 20px;
+        }
+
+        .specialist-content ul li {
+            font-size: 17px;
+            margin-bottom: 8px;
+            line-height: 2;
+        }
+
+        .specialist-content a {
+            color: #007aff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .specialist-content a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .specialist-content hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 25px 0;
+        }
+
+        /* Certificates Images */
+        .certificates-table {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .certificates-table td {
+            text-align: center;
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .certificates-table img {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .certificates-table img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tags */
+        .tags-section {
+            margin: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .tag:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Share Section */
+        .share-section {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 30px;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: all 0.3s;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .share-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+            transform: translateX(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .specialist-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .specialist-title {
+                font-size: 22px;
+            }
+
+            .profile-image-container img {
+                width: 100%;
+            }
+
+            .specialist-content h1 {
+                font-size: 19px;
+            }
+
+            .specialist-content h2 {
+                font-size: 17px;
+            }
+
+            .specialist-content ul li {
+                font-size: 15px;
+            }
+
+            .certificates-table {
+                display: block;
+            }
+
+            .certificates-table tbody,
+            .certificates-table tr,
+            .certificates-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .certificates-table td {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/Seting/Faveicon/لوگو-وحدت(2).png" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن مستقیم: 42636846 (031) تلفن مرکز: (داخلی 7) 42626266 - 42621162
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <!-- Back Button -->
+        <a href="about.html" class="back-btn">← بازگشت به درباره ما</a>
+
+
+
+        <!-- Main Content -->
+        <div class="page-content">
+            
+
+            <!-- Profile Image -->
+            <div class="profile-image-container">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/slide01.jpg?raw=true" alt="مریم سلطانی - فیزیوتراپیست">
+            </div>
+
+            <!-- Specialist Content -->
+            <div class="specialist-content">
+                
+                <!-- تحصیلات -->
+                <h1>تحصیلات</h1>
+                
+                <h2>کارشناسی</h2>
+                <ul>
+                    <li>رشته تحصیلی: فیزیوتراپی</li>
+                    <li>محل تحصیل: دانشگاه علوم پزشکی اهواز – دانشکده توانبخشی</li>
+                    <li>معدل دوره کارشناسی: 18.50 از 20</li>
+                    <li>کسب سهمیه دانشجوی ممتاز جهت ادامه تحصیل در مقطع کارشناسی ارشد</li>
+                </ul>
+
+                <h2>کارشناسی ارشد</h2>
+                <ul>
+                    <li>رشته تحصیلی: فیزیوتراپی</li>
+                    <li>محل تحصیل: دانشگاه علوم پزشکی اهواز - دانشکده توانبخشی</li>
+                    <li>عنوان پایان نامه: تاثیر تکلیف دوگانه بر راه رفتن بیماران با پارگی لیگامان متقاطع قدامی (ACL) نسبت به افراد سالم</li>
+                    <li>نمره پروژه: 20 (درجه عالی)</li>
+                    <li>استاد راهنما: دکتر حسین نگهبان</li>
+                    <li>استادان مشاور: دکتر شیرن تجلی – مهندس مهرآور</li>
+                </ul>
+
+                <hr>
+
+                <!-- طرح های تحقیقاتی -->
+                <h1>طرح های تحقیقاتی</h1>
+                <ul>
+                    <li>بررسی تغییرات زوایای سگمانی در حین راه رفتن بیماران با آسیب رباط متقاطع قدامی به وسیله آنالیز منیفولد کنترل نشده</li>
+                    <li>تاثیر تکلیف دو گانه بر کنترل راه رفتن افراد مبتلا به پارگی یکطرفه لیگامان متقاطع قدامی</li>
+                </ul>
+
+                <hr>
+
+                <!-- مقالات چاپ شده در مجله -->
+                <h1>مقالات چاپ شده در مجله</h1>
+                <ul>
+                    <li>
+                        <a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/مقاله-فارسی.pdf" target="_blank">
+                            تاثیر تکلیف دوگانه بر کینماتیک مفاصل اندام تحتانی حین راه رفتن در بیماران مبتلا به پارگی لیگامان متقاطع قدامی – 1392
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/مقاله-انگلیسی.pdf" target="_blank">
+                            Effects of narrow-base walking and dual tasking on gait spatiotemporal characteristics in anterior cruciate ligament-injured adults compared to healthy adults - 1396
+                        </a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <!-- مقالات ارایه شده در همایش -->
+                <h1>مقالات ارایه شده در همایش</h1>
+                <ul>
+                    <li>Nonlinear dynamic parameters have recently emerged as an alternative to perturbation - نوع ارائه سخنرانی - 1392</li>
+                    <li>
+                        <a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/editor/photo_2019-12-12_16-55-39.jpg" target="_blank">
+                            تاثیر تکلیف دوگانه بر کنیماتیک مفاصل اندام تحتانی حین راه رفتن در بیماران مبتلا به پارگی لیگامان متقاطع قدامی - بیست و ششمین کنگره انجمن فیزیوتراپی ایران - نوع ارائه به صورت پوستر - 1394
+                        </a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <!-- دوره های آموزشی -->
+                <h1>دوره های آموزشی</h1>
+                <ul>
+                    <li><a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/editor/photo_2019-12-12_16-55-12.jpg" target="_blank">کارگاه نحوه تهیه و ارائه پوستر سال 1389</a></li>
+                    <li><a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/editor/photo_2019-12-12_16-55-09.jpg" target="_blank">کارگاه مقاله نویسی سال 1390</a></li>
+                    <li>کارگاه طراحی و ارائه پرسشنامه سال 1391</li>
+                    <li><a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/editor/photo_2019-12-12_16-55-05.jpg" target="_blank">کارگاه مقاله نویسی انگلیسی سال 1391</a></li>
+                    <li>فیزیوتراپی در سندروم گیرافتادگی شانه سال 1393</li>
+                    <li>کنگره فیزیوتراپی ایران سال 1394</li>
+                    <li>تمرین درمانی در بیماران مبتلا به سکته مغزی سطح 1 سال 1394</li>
+                    <li>تمرین درمانی در بیماران مبتلا به سکته مغزی سطح 2 سال 1394</li>
+                    <li>اصول و کاربرد لیزر و میدان مغناطیسی سال 1394</li>
+                    <li>کاربرد الکترومایوگرافی در فیزیوتراپی سال 1394</li>
+                    <li>آنفولانزای اپیتیمیک 2 سال 1395</li>
+                    <li>همایش سراسری مغز و اعصاب کودکان سال 1396</li>
+                    <li>نقش اصلاح سبک زندگی در بیماری های دژنراتیو موسکلواسکلتال انگشتان سال 1397</li>
+                    <li>دومین کنگره بین المللی و سیزدهمین کنگره سراسری اورتز و پروتز سال 1398</li>
+                    <li>سی امین کنگره سالانه و سومین کنگره بین المللی فیزیوتراپی سال 1398</li>
+                </ul>
+
+                <hr>
+
+                <!-- مهارت های نرم افزاری و زبان -->
+                <h1>مهارت های نرم افزاری و زبان</h1>
+                <ul>
+                    <li>مسلط به نرم افزارهای تمرین درمانی فیزیوتراپی</li>
+                    <li>دارای مدرک دوره مهارتهای چهارگانه کامپیوتری ICDL</li>
+                    <li>داری مدرک آیلتس</li>
+                </ul>
+
+                <hr>
+
+                <!-- عضویت در مجامع علمی و صنفی -->
+                <h1>عضویت در مجامع علمی و صنفی</h1>
+                <ul>
+                    <li>عضو انجمن فیزیوتراپی ایران</li>
+                    <li>عضو نظام پزشکی ایران</li>
+                </ul>
+
+                <hr>
+
+                <!-- سوابق کاری -->
+                <h1>سوابق کاری</h1>
+                <ul>
+                    <li>مسئول فنی فیزیوتراپی الزهرا نجف آباد سال 1388</li>
+                    <li>مسئول فنی فیزیوتراپی کوثر نجف آباد سال 1388</li>
+                    <li>فیزیوتراپیست در بخش ICU و CCU، داخلی و جراحی بیمارستان بقایی اهواز سال 1391</li>
+                    <li>فیزیوتراپیست در بخش سرپایی بیمارستان گلستان اهواز سال 1391</li>
+                    <li>مسئول فنی فیزیوتراپی سینوهه اهواز سال 1391 تا 1392</li>
+                    <li>مسئول فنی فیزیوتراپی درمانگاه حکیم اهواز سال 1391 تا 1392</li>
+                    <li>مسئول فنی فیزیوتراپی هلال احمر نجف آباد سال 1392</li>
+                    <li>مسئول فنی فیزیوتراپی مرکزی خمینی شهر اصفهان سال 1392 تا 1393</li>
+                    <li><strong><a href="http://vahdatpt.ir" target="_blank">مسئول فنی و موسس فیزیوتراپی وحدت نجف آباد از سال 1392 تا کنون</a></strong></li>
+                </ul>
+
+                <hr>
+
+                <!-- عناوین کسب شده -->
+                <h1>عناوین کسب شده</h1>
+                <ul>
+                    <li>کسب مقام اول دانش آموز برتر استان اصفهان در امتحانات نهایی متوسطه</li>
+                    <li>کسب سهمیه استعداد درخشان از سازمان سنجش کشور جهت ادامه تحصیل در مقطع کارشناسی ارشد</li>
+                </ul>
+
+                <hr>
+
+                <!-- تصاویر مدارک -->
+                <table class="certificates-table">
+                    <tr>
+                        <td>
+                            <a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/editor/photo_2019-12-12_16-55-27.jpg" target="_blank">
+                                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/photo_2019-12-12_16-55-25.jpg?raw=true" alt="مدرک">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/درباره-ما/درباره-ما/editor/photo_2019-12-12_16-55-25.jpg" target="_blank">
+                                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/pics/photo_2019-12-12_16-55-27.jpg?raw=true" alt="مدرک">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- Tags -->
+            <div class="tags-section">
+                <a href="#" class="tag">مریم سلطانی</a>
+                <a href="#" class="tag">فیزیوتراپیست</a>
+                <a href="#" class="tag">فیزیوتراپی</a>
+                <a href="#" class="tag">فیزیوتراپی وحدت</a>
+                <a href="#" class="tag">اصفهان</a>
+                <a href="#" class="tag">نجف آباد</a>
+                <a href="#" class="tag">نظام پزشکی</a>
+                <a href="#" class="tag">دکتر مریم سلطانی</a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-slogan">مجهز و ایمن با نوبت دهی آنلاین</div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a>
+                    <a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a>
+                    <a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
