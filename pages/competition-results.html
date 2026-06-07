@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="مسابقه نیمه شعبان دوره اول - فیزیوتراپی وحدت نجف آباد">
+    <title>نتایج مسابقه نیمه شعبان دوره اول - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .page-title {
+            font-size: 24px;
+            color: #007aff;
+            font-weight: bold;
+        }
+        .page-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+        .stat-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+        .info-text {
+            text-align: center;
+            line-height: 2.5;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 30px;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        .info-text strong {
+            color: #007aff;
+        }
+        .winners-title {
+            text-align: center;
+            font-size: 20px;
+            color: #007aff;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .winners-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .winners-table thead th {
+            background: #33ccff;
+            color: #000;
+            padding: 12px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .winners-table tbody td {
+            padding: 12px 15px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+        .winners-table tbody tr:nth-child(even) td {
+            background: #f9f9f9;
+        }
+        .winners-table .row-number {
+            background: #66ff00;
+            color: #000;
+            font-weight: bold;
+        }
+        .winners-table tbody tr:hover td {
+            background: #f0f7ff;
+        }
+        .winners-table tbody tr:hover .row-number {
+            background: #55dd00;
+        }
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 25px;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f0f7ff;
+            color: #007aff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .share-btn:hover {
+            background: #007aff;
+            color: #fff;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 20px;
+            transition: all 0.3s;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+            transform: translateX(-5px);
+        }
+        @media (max-width: 768px) {
+            .page-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .page-title {
+                font-size: 20px;
+            }
+            .info-text {
+                font-size: 14px;
+                padding: 15px;
+            }
+            .winners-table thead th,
+            .winners-table tbody td {
+                padding: 8px 6px;
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .winners-table {
+                font-size: 11px;
+            }
+            .winners-table thead th,
+            .winners-table tbody td {
+                padding: 6px 4px;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن مستقیم: 42636846 (031) تلفن مرکز: (داخلی 7) 42626266 - 42621162
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <a href="competition.html" class="back-btn">← بازگشت به مسابقه</a>
+
+        <div class="quick-links">
+            <a href="competition.html" class="quick-link">
+                <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/پیوند-های-سایت/قوانین-و-راهنما/8-10-2019-7-51-53-AM.jpg" alt="مسابقه نیمه شعبان" class="quick-link-img"><span>مسابقه نیمه شعبان</span>
+            </a>
+            <a href="chat.html" class="quick-link">
+                <img src="http://nanocnt.ir/img/social_network/whatsup/whatsup%20(1).png" alt="مشاوره آنلاین" class="quick-link-img"><span>مشاوره آنلاین</span>
+            </a>
+            <a href="survey.html" class="quick-link">
+                <img src="http://www.rsct.ir/portals/0/images/survey_callout.jpg" alt="نظرسنجی آنلاین" class="quick-link-img"><span>نظرسنجی آنلاین</span>
+            </a>
+        </div>
+
+        <div class="page-content">
+            
+            <div class="page-header">
+                <h1 class="page-title"> نتایج مسابقه نیمه شعبان دوره اول</h1>
+            </div>
+
+            <div class="info-text">
+                <p>پایان مسابقه نیمه شعبان</p>
+                <p><strong>مرکز فیزیوتراپی وحدت</strong></p>
+                <p>در دو نوبت صبح و عصر در محیطی بدون پله و تجهیزات الکتروتراپی شامل دستگاه های لیزر پرتوان، کشش الکتریکی ستون فقرات، دستگاه بیوفیدبک و دستگاه های تحریک کننده عصب و عضله و اتاق تمرین درمانی مجهز آماده خدمت رسانی به بیماران عزیز میباشد.</p>
+                <p>آدرس: خ امام شرقی مابین چهارراه شهرداری و بانک ملی مرکزی</p>
+                <p>تلفن: 42636846</p>
+                <p>آدرس اینترنتی: www.vahdatpt.ir (جهت مشاوره رایگان و دریافت نوبت)</p>
+                <p>طرف قرارداد با بیمه های تامین اجتماعی، بیمه سلامت، آتیه سازان حافظ و دانا و نیروهای مسلح و...</p>
+            </div>
+
+            <p class="winners-title">اسامی برندگان مسابقه نیمه شعبان</p>
+
+            <table class="winners-table">
+                <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>برنده</th>
+                        <th>شماره موبایل</th>
+                        <th>جایزه</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row-number">1</td>
+                        <td>ترنم صف آرا نجف آبادی</td>
+                        <td>91***091323</td>
+                        <td>50 هزار تومان</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">2</td>
+                        <td>فاطمه سلطانی نجف آبادی</td>
+                        <td>88***091360</td>
+                        <td>30 هزار تومان</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">3</td>
+                        <td>زینب کاظمی نجف آبادی</td>
+                        <td>90***093700</td>
+                        <td>20 هزار تومان</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">4</td>
+                        <td>عفت بوریایی</td>
+                        <td>40***093357</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">5</td>
+                        <td>رضا هنرمند</td>
+                        <td>94***093016</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">6</td>
+                        <td>فاطمه زهرا صالحی</td>
+                        <td>06***093684</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">7</td>
+                        <td>فائزه سلطانی</td>
+                        <td>01***092119</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">8</td>
+                        <td>مریم زمانیان</td>
+                        <td>99***093646</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">9</td>
+                        <td>محیا سلیمانی</td>
+                        <td>57***093559</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">10</td>
+                        <td>سهیل میرعباسی</td>
+                        <td>23***091000</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">11</td>
+                        <td>لیلا نعمتی</td>
+                        <td>71***091303</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">12</td>
+                        <td>معصومه جمشیدیان</td>
+                        <td>70***091375</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                    <tr>
+                        <td class="row-number">13</td>
+                        <td>اصغر سورانی</td>
+                        <td>970*****099</td>
+                        <td>5 هزار تومان شارژ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a>
+                    <a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a>
+                    <a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
