@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - آرتروز مچ دست">
+    <title>آرتروز مچ دست - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .page-title {
+            font-size: 26px;
+            color: #007aff;
+            font-weight: bold;
+        }
+        .page-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+        .stat-btn:hover { background: #007aff; color: #fff; }
+
+        .article-body {
+            line-height: 2.3;
+            color: #333;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .article-body .highlight { color: #ff0000; font-weight: bold; }
+        .article-body .section-heading {
+            color: #2980b9;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin: 30px 0 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2980b9;
+        }
+        .article-body ul {
+            list-style: none;
+            padding: 0;
+        }
+        .article-body ul li {
+            margin-bottom: 10px;
+            padding-right: 20px;
+            position: relative;
+        }
+        .article-body ul li::before {
+            content: '•';
+            color: #ff0000;
+            font-size: 22px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+        .article-body p { margin-bottom: 12px; }
+
+        .images-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+        .images-row img, .single-image img {
+            width: 280px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .images-row img:hover, .single-image img:hover {
+            transform: scale(1.05);
+        }
+        .single-image {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .video-link-box {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: #f0f7ff;
+            border-radius: 12px;
+            border-right: 4px solid #007aff;
+        }
+        .video-link-box a {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .video-link-box a:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,122,255,0.3);
+        }
+
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 25px;
+        }
+        .share-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: #f0f7ff; color: #007aff; padding: 10px 25px;
+            border-radius: 25px; font-size: 15px; transition: all 0.3s;
+            border: none; cursor: pointer; font-weight: bold;
+        }
+        .share-btn:hover { background: #007aff; color: #fff; }
+        .back-btn {
+            display: inline-block; background: #007aff; color: #fff;
+            padding: 12px 25px; border-radius: 25px; margin: 20px;
+            transition: all 0.3s; font-size: 15px; text-decoration: none;
+        }
+        .back-btn:hover { background: #0056b3; transform: translateX(-5px); }
+        @media (max-width: 768px) {
+            .page-header { flex-direction: column; text-align: center; }
+            .page-title { font-size: 20px; }
+            .article-body { font-size: 15px; line-height: 2.1; }
+            .article-body .section-heading { font-size: 18px; }
+            .images-row img, .single-image img { width: 100%; max-width: 280px; height: auto; }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، پلویسیت، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، دستگاه سی پی ام، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <a href="disease-wrist.html" class="back-btn">← بازگشت به بیماری‌های مچ دست</a>
+
+
+        <div class="page-content">
+            
+            <div class="page-header">
+                <h1 class="page-title"> آرتروز مچ دست</h1>
+            </div>
+
+            <div class="article-body">
+                
+                <p>آرتروز یکی از بیماری های تخریبی و پیشرونده مفصلی است که سبب بروز درد، ورم مفاصل و خشکی مفاصل می شود. آرتروز به دلیل آسیب و از بین رفتن تدریجی غضروف مفصلی رخ می دهد که عوامل مختلفی در بروز آن دخیلند.</p>
+                <p>حرکات تکراری مچ دست و وارد شدن فشار بیش از حد به مچ دست مهم ترین عواملی هستند که ریسک ابتلا به آرتروز مچ دست را افزایش می دهند. درد در مچ دست یکی از رایج ترین دردهای مفصلی است که می توان گفت یکی از مهم ترین دلایل آن آرتروز است.</p>
+                <p>آرتروز مچ دست در زنان میانسال و سالمند بیش از سایر افراد شایع است. احساس درد در مچ دست، خشکی و سفتی مچ دست که موجب محدودیت حرکات مچ دست می شوند از مهم ترین علائم و عوارضی هستند که این بیماری ایجاد می کند.</p>
+                <p>مچ دست یکی از پیچیده ترین مفاصل بدن است و از تعداد زیادی استخوان و مفصل ساخته شده است. غضروف ها نسبت به استخوان بافت نرم تری داشته و سر استخوان ها را در محل مفصل می پوشاند، در صورتی که به هر علتی این غضروف ها آسیب ببینند می توانند زمینه آرتروز را فراهم آورند. از بین رفتن غضروف ها سبب می شود استخوان ها بجای لغزیدن بر روی هم دچار سایش شوند که این وضعیت منجر به محدودیت حرکات مچ دست می شود.</p>
+
+                <span class="section-heading">علائم آرتروز مچ دست</span>
+                <ul>
+                    <li>درد مچ دست</li>
+                    <li>تورم مفصل مچ دست</li>
+                    <li>کاهش قدرت مچ دست</li>
+                    <li>خشکی و کاهش انعطاف پذیری مچ دست</li>
+                    <li>محدودیت حرکتی مچ دست</li>
+                    <li>آتروفی عضلات دست</li>
+                    <li>کاهش توانایی دست در گرفتن اشیا</li>
+                    <li>تشدید درد با حرکت دادن مچ دست</li>
+                    <li>حساسیت به لمس و فشار</li>
+                    <li>تنگی کانال مچ دستی</li>
+                    <li>دفورمیتی مچ دست</li>
+                    <li>شنیده شدن صدا هنگام حرکت دادن مچ دست</li>
+                </ul>
+
+                <span class="section-heading">دلایل و عوامل خطر</span>
+                <ul>
+                    <li>فعالیت های تکراری مچ دست (افرادی که بواسطه شرایط شغلی و ورزشی فشار زیادی به مچ دستشان وارد می شود)</li>
+                    <li>آسیب های قبلی مچ دست</li>
+                    <li>افزایش سن</li>
+                    <li>بیماری های زمینه ای مانند آرتریت روماتوئید</li>
+                    <li>عوامل ژنتیکی</li>
+                    <li>اختلال در تعادل هورمون های بدن</li>
+                </ul>
+
+                <span class="section-heading">درمان آرتروز مچ دست</span>
+                <ul>
+                    <li>در قدم اول باید فعالیت هایی که فشار زیادی به مچ دست وارد می کنند و سبب تشدید درد می شوند به حداقل برسند.</li>
+                    <li>گرم کردن مفصل با استفاده از کمپرس گرم می تواند درد ناشی از آرتروز را کاهش دهد.</li>
+                    <li>بریس های محافظت کننده از مچ دست درد مچ دست را حین حرکت دادن آن کاهش می دهند.</li>
+                    <li>استفاده از داروهای ضدالتهاب غیر استروئیدی مانند ایبوپروفن و ناپروکسن و در صورت درد شدید تزریق داروهای کورتونی می تواند کمک کننده باشد.</li>
+                    <li><span class="highlight">فیزیوتراپی</span> مچ دست بهترین درمان غیر جراحی آرتروز مچ دست است که به بهبود عملکرد مچ دست و تسکین درد و التهاب مچ دست کمک می کند.</li>
+                    <li>فیزیوتراپیست از روش ها و مدالیته های مختلفی مانند لیزر پرتوان، تحریک الکتریکی و منوال تراپی برای درمان آرتروز دست استفاده می کند.</li>
+                    <li>خوشبختانه در اغلب موارد آرتروز مچ دست با روش های غیر جراحی مانند <span class="highlight">فیزیوتراپی</span> و تمرینات ورزشی بخوبی قابل کنترل است و تنها در صورتی که آرتروز بحدی پیشرفت کرده باشد که با روش های غیر جراحی نتوان به کاهش درد بیمار کمکی کرد عمل جراحی ضروری می باشد.</li>
+                </ul>
+
+                <!-- تصاویر ردیف اول -->
+                <div class="images-row">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/بیماری-های-شایع-عضلانی-و-اسکلتی/شانه-آرنج-مچ-دست/مچ-دست/آرتروز-مچ-دست/editor/آتل-جهت-ارتروز-مچ-دست.jpg" alt="آتل آرتروز مچ دست">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/بیماری-های-شایع-عضلانی-و-اسکلتی/شانه-آرنج-مچ-دست/مچ-دست/آرتروز-مچ-دست/editor/آرتروزمچ-دست.jpg" alt="آرتروز مچ دست">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/بیماری-های-شایع-عضلانی-و-اسکلتی/شانه-آرنج-مچ-دست/مچ-دست/آرتروز-مچ-دست/editor/مچ-دست-2.jpg" alt="مچ دست">
+                </div>
+
+                <!-- تصویر تکی -->
+                <div class="single-image">
+                    <img src="http://vahdatpt.ir/uploadfile/file_portal/site_4395_web/file_portal_end/بخش-محتوایی-سایت/بیماری-های-شایع-عضلانی-و-اسکلتی/شانه-آرنج-مچ-دست/مچ-دست/آرتروز-مچ-دست/editor/مچ-دست1.jpg" alt="مچ دست 1">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a><a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a><a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a><a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a><a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
