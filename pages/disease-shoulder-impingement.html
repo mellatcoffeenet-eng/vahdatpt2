@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - سندرم گیر افتادگی شانه">
+    <title>سندرم گیر افتادگی شانه - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .page-title {
+            font-size: 26px;
+            color: #007aff;
+            font-weight: bold;
+        }
+        .page-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+        .stat-btn:hover { background: #007aff; color: #fff; }
+        .article-body {
+            line-height: 2.3;
+            color: #333;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .article-body .highlight { color: #ff0000; font-weight: bold; }
+        .article-body .section-heading {
+            color: #2980b9;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin: 30px 0 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2980b9;
+        }
+        .article-body ul {
+            list-style: none;
+            padding: 0;
+        }
+        .article-body ul li {
+            margin-bottom: 10px;
+            padding-right: 20px;
+            position: relative;
+        }
+        .article-body ul li::before {
+            content: '•';
+            color: #ff0000;
+            font-size: 22px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+        .article-body p { margin-bottom: 12px; }
+        .images-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+        .images-row img {
+            width: 280px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .images-row img:hover { transform: scale(1.05); }
+        .video-link-box {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: #f0f7ff;
+            border-radius: 12px;
+            border-right: 4px solid #007aff;
+        }
+        .video-link-box a {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .video-link-box a:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,122,255,0.3);
+        }
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 25px;
+        }
+        .share-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: #f0f7ff; color: #007aff; padding: 10px 25px;
+            border-radius: 25px; font-size: 15px; transition: all 0.3s;
+            border: none; cursor: pointer; font-weight: bold;
+        }
+        .share-btn:hover { background: #007aff; color: #fff; }
+        .back-btn {
+            display: inline-block; background: #007aff; color: #fff;
+            padding: 12px 25px; border-radius: 25px; margin: 20px;
+            transition: all 0.3s; font-size: 15px; text-decoration: none;
+        }
+        .back-btn:hover { background: #0056b3; transform: translateX(-5px); }
+        @media (max-width: 768px) {
+            .page-header { flex-direction: column; text-align: center; }
+            .page-title { font-size: 20px; }
+            .article-body { font-size: 15px; line-height: 2.1; }
+            .article-body .section-heading { font-size: 18px; }
+            .images-row img { width: 100%; max-width: 280px; height: auto; }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، پلویسیت، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، دستگاه سی پی ام، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <a href="disease-shoulder.html" class="back-btn">← بازگشت به بیماری‌های شانه</a>
+        <div class="page-content">
+            
+            <div class="page-header">
+                <h1 class="page-title"> سندرم گیر افتادگی شانه</h1>
+            </div>
+
+            <div class="article-body">
+                
+                <p>این سندرم هنگامی بروز می کند که فضای ساب آکرومیال فشرده و تنگ شود. اختلال در ثبات دینامیک و استاتیک شانه سبب آسیب فضای ساب آکرومیال شده و ساختارهای بافت نرم نیز تحت فشار قرار می گیرند، در نتیجه این عوامل درد و التهاب ایجاد می شود.</p>
+                <p>این سندرم اغلب در اثر فعالیت های تکراری که با بالا بردن دست به بالای سر همراه هستند ایجاد می شود. فیبروز و تاندونیت از عوارض این بیماری هستند که اغلب در سنین ۲۵ تا ۴۰ سال رخ می دهد. فعالیت سبب تشدید درد شده و گاهی درد شبانه سبب اختلال در خواب فرد می شود.</p>
+                <p>شروع درد تدریجی بوده و بدون برخورد ضربه به مفصل شانه رخ می دهد. حرکات تکراری و طولانی مدت شانه مهم ترین عامل در شروع و تشدید این بیماری است، به همین دلیل این بیماری در نقاش ها، مکانیک ها و ورزشکاران رشته تنیس بیشتر دیده می شود. در این بیماری فرد قادر است بازو را بطور کامل بالا ببرد ولی در پایین آمدن احساس گیر افتادگی در شانه وجود دارد.</p>
+                <p>در رادیوگرافی ممکن است مقداری خارهای استخوانی در زیر آکرومیون دیده شود. در صورت عدم درمان به موقع و مناسب به علت تغییرات دژنراتیو، پارگی عضله سوپرااسپیناتوس رخ می دهد.</p>
+
+                <span class="section-heading">علائم سندرم گیر افتادگی شانه</span>
+                <ul>
+                    <li>درد طولانی مدت و وجود تاندونیت مزمن در ناحیه خارجی بازو</li>
+                    <li>انتشار درد به زیر آرنج</li>
+                    <li>تشدید در هنگام حرکت دادن شانه و انجام فعالیت هایی همچون لباس پوشیدن و شانه زدن</li>
+                    <li>درد تیز و سوزشی در شانه</li>
+                    <li>وجود خارهای استخوانی</li>
+                    <li>آتروفی عضلات روتاتورکاف بخصوص اینفرااسپیناتوس و سوپرااسپیناتوس</li>
+                    <li>آسیب تاندون بایسپس</li>
+                    <li>ضعف در حرکات اکتیو و پاسیو بازو</li>
+                    <li>گرفتگی های عضلات اطراف شانه</li>
+                    <li>محدودیت در حرکات شانه</li>
+                    <li>وجود قوس دردناک در دامنه میانی بازو</li>
+                    <li>درد هنگام کشش شانه</li>
+                </ul>
+
+                <span class="section-heading">دلایل و عوامل خطر</span>
+                <ul>
+                    <li>شکل غیر طبیعی آکرومیون</li>
+                    <li>سستی و ضعف کپسول مفصلی گلنوهومرال</li>
+                    <li>تاندونیت پایدار و تکرار شونده یا بورسیت ساب آکرومیون</li>
+                    <li>اختلالات پاسچر</li>
+                    <li>افزایش کیفوز توراسیک</li>
+                    <li>سستی کپسول قدامی به علت دررفتگی یا نیمه دررفتگی تکراری در سر هومروس</li>
+                    <li>آسیب عضلات روتاتورکاف که در حفظ ثبات دینامیک سر هومروس نقش دارند.</li>
+                    <li>اختلال در عملکرد عضلات اسکاپولا</li>
+                    <li>محدودیت های حرکتی ترقوه</li>
+                    <li>ضعف عضلات رومبوئید و تراپز میانی</li>
+                </ul>
+
+                <span class="section-heading">درمان سندرم گیر افتادگی شانه</span>
+                <p>این بیماری به دو مرحله حاد و مزمن تقسیم می شود که مراحل درمان آن ها نیز متفاوت است. هدف اصلی از درمان کنترل سریع درد و بازگشت سریعتر حرکات شانه به وضعیت طبیعی است.</p>
+                <ul>
+                    <li>استراحت دادن به مفصل شانه و اجتناب از انجام فعالیت هایی که سبب تشدید درد و سایر علائم بیماری می شوند.</li>
+                    <li>برای حمایت از شانه و کاهش حرکات آن می توان از ارتز، باند کشی و یا حتی گچ گرفتن شانه استفاده کرد.</li>
+                    <li>استفاده از کمپرس سرد در محل درد می تواند در تسکین درد موثر باشد.</li>
+                    <li><span class="highlight">فیزیوتراپی</span> شانه مناسب ترین روش در بهبود و کنترل علائم بیماری است.</li>
+                    <li>فیزیوتراپیست با ارزیابی شرایط بیمار بر اساس شدت ضایعه، درمانی را برای حمایت از بافت آسیب دیده تنظیم می کند.</li>
+                    <li>فیزیوتراپیست از متدهای درمانی متفاوتی برای کمک به کاهش درد بیمار و تسریع بهبودی کمک می گیرد.</li>
+                    <li>تمرین درمانی نیز یکی از مهم ترین بخش های درمان <span class="highlight">فیزیوتراپی</span> این عارضه را شامل می شود.</li>
+                    <li>تمرینات <span class="highlight">فیزیوتراپی</span> شانه باید سبک و محدود و از نظر تکرار و شدت نیز پایین باشند.</li>
+                    <li>تقویت عضلات روتاتور کاف با تمرین درمانی می تواند بهبود شرایط بیمار کمک کند.</li>
+                    <li>تمرینات در ابتدا باید به صورت ایزومتریک و از کنار بدن شروع شده و سپس به صورت ایزوتونیک ادامه یابد.</li>
+                    <li>اگر حین انجام تمرینات بیمار احساس درد داشته باشد باید بلافاصله تمرینات را قطع کرد.</li>
+                    <li>متخصص <span class="highlight">فیزیوتراپی</span> از الکتروتراپی تنس و اولتراسوند برای کمک به بهبود شرایط بیمار استفاده می کند.</li>
+                    <li>درمان دستی یا منوال تراپی با استفاده از تکنیک های موبیلیزاسیون می تواند سبب افزایش دامنه حرکتی شانه، جداسازی سطوح مفصلی درگیر و کاهش درد بیمار شود.</li>
+                    <li>درمان های دستی <span class="highlight">فیزیوتراپی</span> کلیدی ترین بخش درمان سندرم گیر افتادگی شانه هستند که چسبندگی های ایجاد شده را کاهش داده و حرکات شانه را بهبود می بخشند.</li>
+                    <li>ماساژ درمانی بخصوص در فاز مزمن بیماری به قرار گیری فیبرها در راستای طبیعی کمک کرده و از این طریق درد را کاهش می دهد.</li>
+                    <li>برای کاهش درد و التهاب داروهایی مانند پیروکسیکام، دیکلوفناک، هیدروکورتیزون و دگزامتازون نیز تجویز می شوند.</li>
+                </ul>
+
+                <!-- تصاویر -->
+                <div class="images-row">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/shg01.jpg?raw=true" alt="تعویض مفصل شانه 6">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/shg02.jpg?raw=true" alt="تعویض مفصل شانه">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/shg03.jpg?raw=true" alt="تعویض مفصل شانه 2">
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a><a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a><a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a><a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a><a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function handleLike() {
+            const c = document.getElementById('like-count');
+            c.textContent = parseInt(c.textContent) + 1;
+            const b = document.querySelectorAll('.stat-btn');
+            b[0].style.background = '#007aff'; b[0].style.color = '#fff';
+            setTimeout(() => { b[0].style.background = '#f0f7ff'; b[0].style.color = '#007aff'; }, 500);
+        }
+        function handleDislike() {
+            const c = document.getElementById('dislike-count');
+            c.textContent = parseInt(c.textContent) + 1;
+            const b = document.querySelectorAll('.stat-btn');
+            b[1].style.background = '#ff3b30'; b[1].style.color = '#fff';
+            setTimeout(() => { b[1].style.background = '#f0f7ff'; b[1].style.color = '#007aff'; }, 500);
+        }
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({ title: 'سندرم گیر افتادگی شانه - فیزیوتراپی وحدت', text: 'علائم، دلایل و درمان سندرم گیر افتادگی شانه با فیزیوتراپی', url: window.location.href });
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => alert('لینک صفحه کپی شد!'));
+            }
+        }
+    </script>
+</body>
+</html>
