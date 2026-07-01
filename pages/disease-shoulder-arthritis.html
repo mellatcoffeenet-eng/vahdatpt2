@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - آرتروز شانه">
+    <title>آرتروز شانه - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .page-title {
+            font-size: 26px;
+            color: #007aff;
+            font-weight: bold;
+        }
+        .page-stats {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .stat-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #f0f7ff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #007aff;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+        .stat-btn:hover { background: #007aff; color: #fff; }
+
+        .article-body {
+            line-height: 2.3;
+            color: #333;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .article-body .highlight { color: #ff0000; font-weight: bold; }
+        .article-body .section-heading {
+            color: #2980b9;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin: 30px 0 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2980b9;
+        }
+        .article-body ul {
+            list-style: none;
+            padding: 0;
+        }
+        .article-body ul li {
+            margin-bottom: 10px;
+            padding-right: 20px;
+            position: relative;
+        }
+        .article-body ul li::before {
+            content: '•';
+            color: #ff0000;
+            font-size: 22px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+        .article-body p { margin-bottom: 12px; }
+
+        .images-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+        .images-row img {
+            width: 280px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .images-row img:hover { transform: scale(1.05); }
+
+        .video-link-box {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: #f0f7ff;
+            border-radius: 12px;
+            border-right: 4px solid #007aff;
+        }
+        .video-link-box a {
+            display: inline-block;
+            background: #007aff;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .video-link-box a:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,122,255,0.3);
+        }
+
+        .share-section {
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 25px;
+        }
+        .share-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: #f0f7ff; color: #007aff; padding: 10px 25px;
+            border-radius: 25px; font-size: 15px; transition: all 0.3s;
+            border: none; cursor: pointer; font-weight: bold;
+        }
+        .share-btn:hover { background: #007aff; color: #fff; }
+        .back-btn {
+            display: inline-block; background: #007aff; color: #fff;
+            padding: 12px 25px; border-radius: 25px; margin: 20px;
+            transition: all 0.3s; font-size: 15px; text-decoration: none;
+        }
+        .back-btn:hover { background: #0056b3; transform: translateX(-5px); }
+        @media (max-width: 768px) {
+            .page-header { flex-direction: column; text-align: center; }
+            .page-title { font-size: 20px; }
+            .article-body { font-size: 15px; line-height: 2.1; }
+            .article-body .section-heading { font-size: 18px; }
+            .images-row img { width: 100%; max-width: 280px; height: auto; }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، پلویسیت، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، دستگاه سی پی ام، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <a href="disease-shoulder.html" class="back-btn">← بازگشت به بیماری‌های شانه</a>
+
+        <div class="page-content">
+            
+            <div class="page-header">
+                <h1 class="page-title"> آرتروز شانه</h1>
+            </div>
+
+            <div class="article-body">
+                
+                <p>زمانی رخ می‌دهد که غضروف پوشاننده اطراف مفصل شانه دچار تخریب و ساییدگی شود. در مراحل ابتدایی بیماری حفره‌های کوچکی در غضروف پوشاننده مفصل ایجاد شده و بتدریج و با پیشرفت بیماری خارها و زائده‌های استخوانی در لبه‌های سطح مفصل شانه ایجاد می شود.</p>
+                <p>با گذشت زمان و پیشرفت بیماری و تخریب کامل غضروف استخوان ها در محل مفصل بر روی هم ساییده شده و مشکلات ناشی از بیماری به بیشترین حد خود می رسد. وارد شدن ضربه به شانه یا از جا در رفتن استخوان شانه یا فرسودگی شانه در نتیجه افزایش سن از مهم ترین عوامل ایجاد کننده آرتروز شانه هستند.</p>
+                <p>به دلیل تحرک بالا مفصل شانه احتمال آسیب دیدگی آن و بروز انواع بیماری های شانه از جمله آرتروز در این مفصل بالاست. درد، التهاب، خشکی و سفتی شانه و کاهش دامنه حرکتی شانه از مهم ترین علائم و عوارضی هستند که آرتروز شانه ایجاد می کند.</p>
+
+                <span class="section-heading">افراد در معرض خطر آرتروز شانه</span>
+                <ul>
+                    <li>افراد بالای ۴۰ سال بخصوص بانوان</li>
+                    <li>ورزشکاران و افرادی که دست خود را زیاد بالای سر می برند.</li>
+                    <li>بلند کردن وزنه‌های سنگین یا انجام حرکات ورزشی بالای سر</li>
+                    <li>افرادی که در گذشته دچار آسیب دیدگی مفصل شانه شده اند.</li>
+                    <li>افرادی که در خانواده آن ها سابقه ابتلا به آرتروز وجود دارد.</li>
+                    <li>افرادی که دچار اختلال در سوخت و ساز بدن هستند یا به بیماری هایی مانند آرتریت روماتوئید و نقرس مبتلا هستند.</li>
+                </ul>
+
+                <span class="section-heading">علائم آرتروز شانه</span>
+                <ul>
+                    <li>درد شانه بخصوص هنگام فعالیت و حرکت دادن شانه</li>
+                    <li>اختلال خواب شبانه به دلیل وجود درد</li>
+                    <li>خشکی و سفتی مفصل شانه</li>
+                    <li>کاهش انعطاف پذیری و دامنه حرکتی شانه</li>
+                    <li>اختلال در عملکرد طبیعی شانه در انجام فعالیت روزانه مانند لباس پوشیدن و...</li>
+                    <li>انتشار درد به بازو و آرنج</li>
+                    <li>صدا دادن مفصل شانه هنگام حرکت</li>
+                    <li>ضعف و آتروفی عضلات اطراف مفصل شانه</li>
+                    <li>حساسیت شانه به لمس و فشار</li>
+                </ul>
+
+                <span class="section-heading">دلایل آرتروز شانه</span>
+                <ul>
+                    <li>وارد شدن ضربه به شانه</li>
+                    <li>آسیب های قبلی شانه مانند شکستگی و دررفتگی</li>
+                    <li>جراحی شانه در گذشته</li>
+                    <li>وارد شدن فشار بیش از حد به مفصل شانه</li>
+                    <li>حرکات تکراری شانه</li>
+                    <li>بیماری های مادرزادی مانند جابه جایی استخوان های شانه</li>
+                </ul>
+
+                <span class="section-heading">درمان آرتروز شانه</span>
+                <ul>
+                    <li>آرتروز نوعی بیماری تخریبی است که درمان قطعی ندارد و تنها با روش های درمانی می توان به کنترل و جلوگیری از پیشرفت بیماری کمک کرد.</li>
+                    <li>در مواردی نیز که تخریب کامل غضروف مفصلی رخ داده و با درمان های غیر جراحی نمی توان مشکلات بیمار همچون درد و محدودیت حرکتی را کاهش داد عمل جراحی انجام می گیرد.</li>
+                    <li>استراحت دادن به شانه و اجتناب از انجام کارهایی که نیازمند حرکت دادن شانه و وارد شدن فشار به آن هستند ضروری است.</li>
+                    <li>برای کاهش درد می توان از کمپرس گرم و داروهای مسکن استفاده کرد.</li>
+                    <li>در موارد درد شدید تزریق استروئیدها نیز ممکن است توصیه شود.</li>
+                    <li><span class="highlight">فیزیوتراپی</span> شانه می تواند درد را کاهش داده و دامنه حرکتی شانه را نیز افزایش دهد.</li>
+                    <li>فیزیوتراپیست تمرینات ورزشی ویژه ای را برای بیمار تنظیم می کند.</li>
+                    <li>این تمرینات به افزایش دامنه حرکتی شانه و بازیابی توان از دست رفته عضلات اطراف مفصل شانه کمک می کند.</li>
+                    <li>متخصص <span class="highlight">فیزیوتراپی</span> از دیگر مدالیته های فیزیوتراپی همچون لیزر پرتوان، اولتراسوند و شاک ویو تراپی برای درمان آرتروز شانه استفاده می کند.</li>
+                </ul>
+
+                <!-- تصاویر ردیف اول -->
+                <div class="images-row">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/sha01.jpg?raw=true" alt="آرتروز شانه 2">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/sha02.jpg?raw=true" alt="آرتروز شانه 0">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/sha03.jpg?raw=true" alt="آرتروز شانه 2">
+                </div>
+                <!-- تصاویر ردیف دوم -->
+                <div class="images-row">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/sha04.jpg?raw=true" alt="آرتروز شانه 5">
+                    <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/pics/sha05.jpg?raw=true" alt="آرتروز شانه">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a><a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a><a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a><a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a><a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function handleLike() {
+            const c = document.getElementById('like-count');
+            c.textContent = parseInt(c.textContent) + 1;
+            const b = document.querySelectorAll('.stat-btn');
+            b[0].style.background = '#007aff'; b[0].style.color = '#fff';
+            setTimeout(() => { b[0].style.background = '#f0f7ff'; b[0].style.color = '#007aff'; }, 500);
+        }
+        function handleDislike() {
+            const c = document.getElementById('dislike-count');
+            c.textContent = parseInt(c.textContent) + 1;
+            const b = document.querySelectorAll('.stat-btn');
+            b[1].style.background = '#ff3b30'; b[1].style.color = '#fff';
+            setTimeout(() => { b[1].style.background = '#f0f7ff'; b[1].style.color = '#007aff'; }, 500);
+        }
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({ title: 'آرتروز شانه - فیزیوتراپی وحدت', text: 'علائم، دلایل و درمان آرتروز شانه با فیزیوتراپی', url: window.location.href });
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => alert('لینک صفحه کپی شد!'));
+            }
+        }
+    </script>
+</body>
+</html>
