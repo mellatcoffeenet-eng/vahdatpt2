@@ -700,40 +700,233 @@ img {
 /* ==============================
    Responsive Design
    ============================== */
+/* ==============================
+   Fix Mobile Overflow Issues
+   ============================== */
+
+/* قانون طلایی - همه المان‌ها */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* بدنه صفحه */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+}
+
+/* کانتینر اصلی */
+.main-container {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* همه تصاویر - واکنش‌گرا */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* همه جداول - اسکرول در موبایل */
+table {
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* iFrame ها (مثل فرم گوگل) */
+iframe {
+    max-width: 100%;
+}
+
+/* ==============================
+   Responsive Fixes
+   ============================== */
 @media (max-width: 768px) {
-    .testimonials-wrapper {
-        flex-direction: column;
+    /* padding کلی برای صفحات */
+    .page-content {
+        padding: 15px 10px !important;
+        margin: 20px 5px !important;
+        width: auto !important;
     }
     
-    .testimonials-right-col {
-        flex: 0 0 auto;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
+    /* هدر */
+    .header {
+        padding: 10px !important;
     }
     
-    .testimonials-right-title {
-        text-align: center;
-        font-size: 18px;
+    .header-description {
+        font-size: 12px !important;
+        padding: 8px !important;
+        word-spacing: -1px;
     }
     
-    .testimonials-right {
-        min-height: 150px;
-        flex: 1;
+    /* منوی اصلی */
+    .main-nav {
+        display: none; /* در موبایل مخفی میشه - با همبرگر باز میشه */
     }
     
+    /* لینک‌های سریع */
+    .quick-links {
+        gap: 10px !important;
+        padding: 10px !important;
+    }
+    
+    .quick-link {
+        width: 80px !important;
+    }
+    
+    .quick-link-img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .quick-link span {
+        font-size: 11px !important;
+    }
+    
+    /* کارت‌های بیماری */
+    .disease-cards {
+        gap: 10px !important;
+    }
+    
+    .disease-card {
+        width: 45% !important;
+        max-width: 160px !important;
+    }
+    
+    .disease-card-img {
+        height: 100px !important;
+    }
+    
+    .disease-card-body {
+        padding: 8px !important;
+    }
+    
+    .disease-card-title {
+        font-size: 13px !important;
+    }
+    
+    /* بخش بیماری‌های شایع */
+    .disease-grid {
+        gap: 8px !important;
+    }
+    
+    .disease-grid .disease-card {
+        width: 70px !important;
+        padding: 8px 5px !important;
+    }
+    
+    .disease-grid .disease-card img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .disease-grid .disease-card span {
+        font-size: 10px !important;
+    }
+    
+    /* دکمه‌های شیفت */
+    .shift-buttons {
+        gap: 10px !important;
+    }
+    
+    .shift-btn {
+        min-width: 140px !important;
+        padding: 12px 15px !important;
+        font-size: 13px !important;
+    }
+    
+    /* تصاویر داخل محتوا */
+    .images-row {
+        gap: 8px !important;
+    }
+    
+    .images-row img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* جداول داخل محتوا */
+    .page-content table {
+        font-size: 12px !important;
+    }
+    
+    .page-content td, 
+    .page-content th {
+        padding: 6px 4px !important;
+    }
+    
+    /* اسلایدر اصلی */
+    .main-slider .swiper-slide img {
+        height: 200px !important;
+    }
+    
+    /* فوتر */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px 15px !important;
+    }
+    
+    /* لیست‌ها */
+    .article-body ul li {
+        font-size: 14px !important;
+        padding-right: 15px !important;
+    }
+    
+    /* دکمه برگشت */
+    .back-btn {
+        margin: 10px !important;
+        font-size: 13px !important;
+        padding: 10px 18px !important;
+    }
+    
+    /* بخش امتیازات */
     .testimonial-card {
-        padding: 25px 20px 20px 20px;
-    }
-    
-    .testimonial-fixed-label {
-        top: 10px;
-        right: 10px;
-        font-size: 13px;
-        padding: 4px 12px;
+        padding: 15px !important;
     }
     
     .testimonial-card p {
-        margin-top: 20px;
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-content {
+        padding: 10px 5px !important;
+        margin: 10px 2px !important;
+    }
+    
+    .disease-card {
+        width: 44% !important;
+        max-width: 140px !important;
+    }
+    
+    .disease-card-img {
+        height: 90px !important;
+    }
+    
+    .page-title {
+        font-size: 18px !important;
+    }
+    
+    .section-heading {
+        font-size: 16px !important;
+    }
+    
+    .section-title {
+        font-size: 16px !important;
+    }
+    
+    .header-description {
+        font-size: 11px !important;
+        line-height: 1.6 !important;
     }
 }
