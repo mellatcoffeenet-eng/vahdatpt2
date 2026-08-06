@@ -85,54 +85,13 @@
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(253,126,20,0.4);
         }
-        .shift-icon {
-            font-size: 24px;
-            display: block;
-            margin-bottom: 5px;
-        }
 
         /* نظرسنجی */
-        .survey-container { padding: 20px; display: none; }
         .survey-icon { font-size: 60px; margin-bottom: 20px; }
         .survey-title { font-size: 24px; color: #007aff; font-weight: bold; margin-bottom: 15px; }
         .survey-desc {
             font-size: 16px; color: #555; line-height: 2; margin-bottom: 30px;
             background: #f0f7ff; padding: 20px; border-radius: 12px; border-right: 4px solid #007aff;
-        }
-        .selected-shift {
-            display: inline-block;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 15px;
-            font-weight: bold;
-            color: #fff;
-            margin-bottom: 20px;
-        }
-        .selected-shift.morning { background: #28a745; }
-        .selected-shift.evening { background: #fd7e14; }
-        .survey-form { text-align: right; max-width: 500px; margin: 0 auto; }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; font-size: 15px; color: #333; font-weight: bold; margin-bottom: 8px; }
-        .form-group input, .form-group textarea, .form-group select {
-            width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 10px;
-            font-size: 14px; font-family: Tahoma, Arial, sans-serif; transition: border-color 0.3s; background: #fafafa;
-        }
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-            border-color: #007aff; outline: none; background: #fff;
-        }
-        .form-group textarea { resize: vertical; min-height: 100px; }
-        .rating-group { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-        .rating-option { display: flex; align-items: center; gap: 4px; font-size: 14px; cursor: pointer; }
-        .rating-option input[type="radio"] { width: auto; cursor: pointer; }
-        .submit-btn {
-            display: inline-block; background: #007aff; color: #fff; padding: 14px 40px;
-            border-radius: 30px; font-size: 17px; font-weight: bold; border: none;
-            cursor: pointer; transition: all 0.3s; width: 100%; margin-top: 10px;
-        }
-        .submit-btn:hover { background: #0056b3; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,122,255,0.3); }
-        .success-message {
-            display: none; background: #d4edda; color: #155724; padding: 20px;
-            border-radius: 12px; font-size: 16px; font-weight: bold; margin-top: 20px; border: 1px solid #c3e6cb;
         }
         .share-section { text-align: center; padding: 20px 0 0; border-top: 2px solid #f0f0f0; margin-top: 25px; }
         .share-btn {
@@ -176,7 +135,7 @@
                 صفحات سایت <span>»</span> <span class="current">نظرسنجی</span>
             </div>
 
-            <!-- قفل رمز -->
+            <!-- قفل رمز (با متغیر PASSWORD_ENABLED کنترل میشه) -->
             <div class="login_page_1" id="loginBox">
                 <div class="login_page_2">
                     این پست رمز گذاری شده<br>
@@ -192,7 +151,7 @@
                 <p class="login-error" id="loginError">⛔ رمز عبور اشتباه است!</p>
             </div>
 
-            <!-- دکمه‌های شیفت (مخفی تا وقتی رمز وارد نشه) -->
+            <!-- دکمه‌های شیفت -->
             <div id="shiftButtons" style="display: none;">
                 <div class="survey-icon">📋</div>
                 <h2 class="survey-title">نظرسنجی مرکز فیزیوتراپی وحدت</h2>
@@ -211,7 +170,6 @@
         </div>
 
         <footer class="footer">
-
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>تماس با ما</h4>
@@ -238,9 +196,16 @@
     </div>
 
     <script>
-        // ========== تغییر رمز اینجا ==========
-        var CORRECT_PASSWORD = "55555";
-        // ====================================
+        // ========== تنظیمات ==========
+        var PASSWORD_ENABLED = false;   // true = رمز فعال | false = رمز غیرفعال (مستقیم باز بشه)
+        var CORRECT_PASSWORD = "55555"; // رمز عبور (فقط وقتی PASSWORD_ENABLED = true کار میکنه)
+        // ============================
+
+        // اگه رمز غیرفعاله، مستقیم دکمه‌های شیفت رو نشون بده
+        if (!PASSWORD_ENABLED) {
+            document.getElementById('loginBox').style.display = 'none';
+            document.getElementById('shiftButtons').style.display = 'block';
+        }
 
         function checkPassword() {
             var input = document.getElementById('pagepost_text');
@@ -259,15 +224,6 @@
                 input.value = ''; input.focus();
             }
         }
-
-        function submitSurvey(event) {
-            event.preventDefault();
-            var form = document.getElementById('surveyForm');
-            var success = document.getElementById('successMessage');
-            form.style.display = 'none'; success.style.display = 'block';
-            setTimeout(function() { success.style.display = 'none'; form.style.display = 'block'; form.reset(); }, 5000);
-        }
-
     </script>
 </body>
 </html>
