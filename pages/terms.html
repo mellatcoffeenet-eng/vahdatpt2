@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fa-ir" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007aff">
+    <meta name="description" content="فیزیوتراپی وحدت نجف آباد اصفهان - نظرسنجی">
+    <title>قوانین و مقررات - فیزیوتراپی وحدت نجف آباد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            min-height: 400px;
+        }
+        .breadcrumb {
+            text-align: right;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            font-size: 15px;
+            color: #666;
+        }
+        .breadcrumb span { color: #007aff; margin: 0 8px; font-weight: bold; }
+        .breadcrumb .current { color: #333; font-weight: bold; }
+
+        /* قفل رمز */
+        .login_page_1 { padding: 40px 20px; }
+        .login_page_2 { margin-bottom: 15px; font-size: 16px; color: #555; font-weight: bold; line-height: 2; }
+        .login_page_3 {
+            width: 220px; padding: 12px 15px; border: 2px solid #ddd; border-radius: 8px;
+            font-size: 16px; text-align: center; font-family: Tahoma, Arial, sans-serif;
+            letter-spacing: 2px; transition: border-color 0.3s;
+        }
+        .login_page_3:focus { border-color: #007aff; outline: none; }
+        .login_page_4 {
+            display: inline-block; background: #007aff; color: #fff; padding: 12px 35px;
+            border-radius: 8px; font-size: 16px; font-weight: bold; border: none;
+            cursor: pointer; transition: all 0.3s;
+        }
+        .login_page_4:hover { background: #0056b3; }
+        .login-error { color: #ff3b30; font-size: 14px; margin-top: 10px; display: none; }
+
+        /* دکمه‌های شیفت */
+        .shift-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .shift-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            min-width: 200px;
+        }
+        .shift-btn-morning {
+            background: #28a745;
+            border: 3px solid #1e7e34;
+        }
+        .shift-btn-morning:hover {
+            background: #218838;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40,167,69,0.4);
+        }
+        .shift-btn-evening {
+            background: #fd7e14;
+            border: 3px solid #dc6502;
+        }
+        .shift-btn-evening:hover {
+            background: #e8590c;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(253,126,20,0.4);
+        }
+
+        /* قوانین و مقررات */
+        .survey-icon { font-size: 60px; margin-bottom: 20px; }
+        .survey-title { font-size: 24px; color: #007aff; font-weight: bold; margin-bottom: 15px; }
+        .survey-desc {
+            font-size: 16px; color: #555; line-height: 2; margin-bottom: 30px;
+            background: #f0f7ff; padding: 20px; border-radius: 12px; border-right: 4px solid #007aff;
+        }
+        .share-section { text-align: center; padding: 20px 0 0; border-top: 2px solid #f0f0f0; margin-top: 25px; }
+        .share-btn {
+            display: inline-flex; align-items: center; gap: 8px; background: #f0f7ff; color: #007aff;
+            padding: 10px 25px; border-radius: 25px; font-size: 15px; transition: all 0.3s;
+            border: none; cursor: pointer; font-weight: bold;
+        }
+        .share-btn:hover { background: #007aff; color: #fff; }
+        .back-btn {
+            display: inline-block; background: #007aff; color: #fff; padding: 12px 25px;
+            border-radius: 25px; margin: 20px; transition: all 0.3s; font-size: 15px; text-decoration: none;
+        }
+        .back-btn:hover { background: #0056b3; transform: translateX(-5px); }
+        @media (max-width: 768px) {
+            .survey-title { font-size: 20px; }
+            .survey-desc { font-size: 14px; }
+            .login_page_3 { width: 160px; }
+            .shift-buttons { gap: 15px; }
+            .shift-btn { min-width: 160px; font-size: 14px; padding: 12px 20px; }
+        }
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+    <div class="main-container">
+        
+        <header class="header">
+            <a href="../index.html" class="logo">
+                <img src="https://github.com/mellatcoffeenet-eng/vahdatpt2/blob/main/images/logo.png?raw=true" alt="فیزیوتراپی وحدت نجف آباد" class="logo-img">
+            </a>
+            <div class="header-description">
+                نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی. تلفن تماس: ۰۹۹۲۵۱۶۷۸۴۳
+                <br>بدون پله، مجهزبه بیوفیدبک عضلات کف لگن، پلویسیت، دستگاه شاک ویو، لیزرپرتوان، دستگاه های تحریک کننده عصب و عضله، پارافین، ترکشن، درای نیدلینگ (طب سوزنی)، دستگاه سی پی ام، تجهیزات تمرین درمانی، تکنیک های دستی و...
+            </div>
+        </header>
+
+        <a href="../index.html" class="back-btn">← بازگشت به صفحه اصلی</a>
+
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <p>نجف آباد. خیابان امام شرقی. مابین چهارراه شهرداری و بانک ملی مرکزی.</p>
+                    <p>تلفن مستقیم: (031) 42636846</p>
+                    <p>تلفن مرکز: (داخلی 7) 42626266 - 42621162</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <a href="../index.html">صفحه اصلی</a><a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a><a href="articles.html">مقالات</a>
+                    <a href="diseases.html">انواع بیماری ها</a><a href="gallery.html">گالری</a>
+                </div>
+                <div class="footer-section">
+                    <h4>خدمات آنلاین</h4>
+                    <a href="chat.html">مشاوره آنلاین</a><a href="survey.html">نظرسنجی</a>
+                    <a href="terms.html">قوانین و مقررات</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                هرگونه کپی برداری بدون ذکر منبع غیرمجاز و تمامی حقوق برای فیزیوتراپی وحدت محفوظ است.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // ========== تنظیمات ==========
+        var PASSWORD_ENABLED = true;   // true = رمز فعال | false = رمز غیرفعال (مستقیم باز بشه)
+        var CORRECT_PASSWORD = "55555"; // رمز عبور (فقط وقتی PASSWORD_ENABLED = true کار میکنه)
+        // ============================
+
+        // اگه رمز غیرفعاله، مستقیم دکمه‌های شیفت رو نشون بده
+        if (!PASSWORD_ENABLED) {
+            document.getElementById('loginBox').style.display = 'none';
+            document.getElementById('shiftButtons').style.display = 'block';
+        }
+
+        function checkPassword() {
+            var input = document.getElementById('pagepost_text');
+            var error = document.getElementById('loginError');
+            var loginBox = document.getElementById('loginBox');
+            var shiftButtons = document.getElementById('shiftButtons');
+
+            if (input.value === CORRECT_PASSWORD) {
+                loginBox.style.display = 'none';
+                shiftButtons.style.display = 'block';
+                if (error) error.style.display = 'none';
+                input.value = '';
+            } else {
+                if (error) { error.style.display = 'block';
+                    setTimeout(function() { error.style.display = 'none'; }, 3000); }
+                input.value = ''; input.focus();
+            }
+        }
+    </script>
+</body>
+</html>
